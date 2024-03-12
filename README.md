@@ -14,7 +14,7 @@ Dans un monde où la sécurité informatique est un point important au sein d'un
 |---|---|---|
 |Ahmed|pion|Doc Admin|
 |Nicolas C|pion|Doc Utilisateur
-|Sébastien|Scrum Ma|VM, IP, Gratter, nmap|
+|Sébastien|Scrum Ma|VM, IP, Gratté nmap|
 |Patrick|PO|DOC Général| 
 
 ### <center>Choix techniques : quel OS, quelle version, etc.. <center>
