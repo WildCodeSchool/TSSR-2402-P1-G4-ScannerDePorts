@@ -1,6 +1,6 @@
 Nmap 7.91 ( https://nmap.org )
 Usage: nmap [Scan Type(s)] [Options] {target specification}
-
+```
 TARGET SPECIFICATION:
   Can pass hostnames, IP addresses, networks, etc.
   Ex: scanme.nmap.org, microsoft.com/24, 192.168.0.1; 10.0.0-255.1-254
@@ -123,6 +123,6 @@ EXAMPLES:
   nmap -v -sn 192.168.0.0/16 10.0.0.0/8
   nmap -v -iR 10000 -Pn -p 80
 SEE THE MAN PAGE (https://nmap.org/book/man.html) FOR MORE OPTIONS AND EXAMPLES
-
+```
 
 
