@@ -12,8 +12,26 @@ Manuel de l'application
 Résumé des options
 > nmap --help  
 
-Scan rapide des ports
-> nmap "ip address"   
+### Utilisation simple
+
+**Les commandes simple peuvent être faites sans appliquer ``sudo``**  
+
+Scan rapide des ports d'une cible unique
+> nmap 10.0.0.1   
+
+Scan rapide des ports d'une série de cibles
+> nmap 10.0.0.1-50
+
+Scan rapide des ports d'un sous-réseau
+> nmap 10.0.0.0/24
+
+### Utilisation avancé
+
+**Les commandes avancé doivent être faite avec la commande ``sudo``**  
+
+Scan des port avec la détection de l'OS présent sur la machine cible
+
+> sudo nmap -O 172.16.10.10  
 
 
 
@@ -133,13 +151,3 @@ le round trip time des paquets de tests.
 nmap -v -A scanme.nmap.org  
 nmap -v -sP 192.168.0.0/16 10.0.0.0/8  
 nmap -v -iR 10000 -P0 -p 80  
-
-
-
-
-## Sous windows 10
-
-
-
-
-Source : [nmap.org/man/fr/](https://nmap.org/man/fr/)
