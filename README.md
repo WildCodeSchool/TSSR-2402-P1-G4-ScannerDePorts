@@ -9,10 +9,17 @@ Création de profils de scan personnalisés
 ***Semaine 1:*** 
 |Nom|Rôles|taches|
 |---|---|---|
-|Ahmed|pion|Doc Admin|
-|Nicolas C|pion|Doc Utilisateur Gratté nmap|
+|Ahmed|membre|Doc Admin|
+|Nicolas C|membre|Doc Utilisateur Gratté nmap|
 |Sébastien|Scrum Ma|VM, IP, Gratté nmap|
 |Patrick|PO|DOC Général| 
+***Semaine 2:***
+|Nom|Rôles|taches|
+|---|---|---|
+|Ahmed|PO|Doc Admin|
+|Nicolas C|Scrum M|Doc Utilisateur Gratté nmap|
+|Sébastien|membre|VM, IP, Gratté nmap|
+|Patrick|membre|DOC Général| 
 
 ### Choix techniques : quel OS, quelle version, etc.. 
 **logiciels:** Nmap.
