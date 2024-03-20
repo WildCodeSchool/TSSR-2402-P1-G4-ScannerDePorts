@@ -13,7 +13,9 @@ Création de profils de scan personnalisés
 |Nicolas C|membre|Doc Utilisateur Gratté nmap|
 |Sébastien|Scrum Ma|VM, IP, Gratté nmap|
 |Patrick|PO|DOC Général| 
+
 ***Semaine 2:***
+
 |Nom|Rôles|taches|
 |---|---|---|
 |Ahmed|PO|Doc Admin|
