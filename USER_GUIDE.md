@@ -13,13 +13,17 @@ Compatible avec de nombreux systèmes d'exploitation, ce programme est en géné
 
 ### Quelques commandes pour commencer
 
-Voila deux commandes très utile pour avoir des informations sur le programme nmap
+Voila deux commandes très utile pour avoir des informations sur le programme nmap.
 
 Manuel de l'application
-> man nmap  
+```
+man nmap
+``` 
 
 Résumé des options
-> nmap --help  
+``` 
+nmap --help  
+```
 
 ### Utilisation simple
 
@@ -27,25 +31,39 @@ Résumé des options
 Quelques exemples simples pour commencer a utiliser nmap :  
 
 Scan rapide des ports d'une cible unique
-> nmap 10.0.0.1   
+```
+nmap 10.0.0.1   
+```
 
 Scan rapide des ports d'une série de cibles
-> nmap 10.0.0.1-50
+```
+nmap 10.0.0.1-50
+```
 
 Scan rapide des ports d'un sous-réseau
-> nmap 10.0.0.0/24
+```
+nmap 10.0.0.0/24
+```
 
 Scan rapide des ports d'une liste de machine préétabli 
-> nmap -iL "list"
+```
+nmap -iL "list"
+```
 
 Scan rapide d'un seul port
-> nmap -p "port" 10.0.0.1
+```
+nmap -p "port" 10.0.0.1
+```
 
 Archivage normal du scan rapide effectué
-> nmap -oN 10.0.0.1
+```
+nmap -oN 10.0.0.1
+```
 
 Archivage XML du scan rapide effectué
-> nmap oX 10.0.0.1 
+```
+nmap oX 10.0.0.1 
+```
 
 ### Utilisation avancé
 
@@ -56,48 +74,65 @@ Quelques exemples :
 
 Scan des ports avec des paquets UDP a la place des paquets TCP
 
-> sudo nmap sU 10.0.0.1
+```
+sudo nmap sU 10.0.0.1
+```
 
 Scan Infiltration SYN :  
 L’option -sS est celle utilisée par défaut par Nmap. Contrairement au scan TCP celle-ci créer une demi-connexion, puisqu’une connexion TCP se passe en trois temps avec une confirmation d’établissement de la connexion.  
 Cette technique envoie un paquet RST qui clôt celle-ci au lieu de la confirmer. Cela a pour effet de réduire le trafic sur la cible et d’augmenter la vitesse du scan.
 
-> sudo nmap -sS 10.0.0.1
+```
+sudo nmap -sS 10.0.0.1
+```
 
 Scan avec ACK : 
 L’option -sN provoque une attaque dite « null ». Une attaque « null » se produit lorsqu’un paquet TCP est envoyé avec tous ses bits de contrôles à zéro. Le paquet est envoyé vers la cible dans l’espoir que le système cible se plaigne du paquet. Les pare-feux classiques ne filtrant que les paquets SYN, le fait que notre paquet soit à zéro pourrait permettre de le faire passer inaperçue.  
 
-> sudo -sN 10.0.0.1
+```
+sudo -sN 10.0.0.1
+```
 
 Scan avec FIN :  
 L’option -sX est un scan avec tous les drapeaux d’activés dans un paquet TCP. Un paquet avec tous les bits d’activés n’a pas de signification dans le protocole TCP.  
 Donc le pare-feu, ne connaissant pas ce type de paquet, laissera passer, puisque les pare-feux classiques filtrent uniquement les paquets SYN et ne regardent pas toujours ce genre d’anomalie.
 
-> nmap -sX 10.0.0.1
+```
+nmap -sX 10.0.0.1
+```
 
 Scan NULL :  
 L’option -sA envoie des paquets ACK sur la cible dans l’espoir que le pare-feu supposera qu’une communication existe déjà entre l’attaquant et la cible. Dans le cas ci-dessous le pare-feu renvoie des paquets RST, car il n’y avait pas de paquet ACK attendu, car aucune connexion n’est en cours. Mais si une communication avait été en cours, des paquets ICMP seraient revenus et nous aurions eu un résultat similaire à l’option -sF présente dans cet article.
 
-> nmap -sA 10.0.0.1
+```
+nmap -sA 10.0.0.1
+```
 
 Scan de l’arbre de Noël
 L’option -sF fonctionne avec les FIN bits. Ceux-ci sont présents à la fin des sessions TCP. Un FIN est envoyé à la cible dans l’espoir que le pare-feu supposera qu’une connexion existe déjà entre l’attaquant et la cible. Les pare-feux classiques filtrent uniquement les paquets SYN, de sorte que le FIN indépendant pourrait passer inaperçu.  
 
-> nmap -sF 10.0.0.1
+```
+nmap -sF 10.0.0.1
+```
 
 Scan des ports avec la détection de l'OS présent sur la machine cible
 
-> sudo nmap -O 172.16.10.10  
+```
+sudo nmap -O 172.16.10.10  
+```
 
 Scan de l'ensemble des 65535 ports de la machine cible. **Attention cette commande prend un certain temps pour s'executer**
 
-> nmap -p- 10.0.0.1
+```
+nmap -p- 10.0.0.1
+```
 
 Scan service et OS  
 il est possible de connaitre les services qui utilisent les ports ou encore l'OS qui fonctionne sur la machine cible. Il y a des parametres  possible suivant si l'on souhaite voir l'un ou l'autre, mais il y a un paramatre qui permet d'avoir les deux, pour cela taper la commande
 
-> nmap -A 10.0.0.1
-
+```
+nmap -A 10.0.0.1
+```
 
 ### Utilisation des scripts
 
@@ -107,7 +142,9 @@ Ces scripts sont disponible dans le sous-dossier `/usr/share/nmap/scripts`
 
 Pour utiliser un script il faut utiliser la commande 
 
-> nmap --scripts "nom du script" 10.0.0.1
+```
+nmap --scripts "nom du script" 10.0.0.1
+```
 
 ### Résumé des options
 Ce résumé des options est affiché quand Nmap est exécuté sans aucun argument; la plus récente version est toujours disponible sur https://nmap.org/data/nmap.usage.txt . Il sert d'aide-mémoire des options les plus fréquemment utilisées, mais ne remplace pas la documentation bien plus détaillée de la suite de ce manuel. Les options obscures n'y sont pas incluses.
@@ -151,7 +188,7 @@ Exemple: -p22; -p1-65535; -pU:53,111,137,T:21-25,80,139,8080
 -r: Scan séquentiel des ports, ne mélange pas leur ordre  
 --top-ports <nombre>: Scan <nombre> de ports parmis les plus courants  
 --port-ratio <ratio>: Scan <ratio> pourcent des ports les plus courants  
- 
+
 - DÉTECTION DE SERVICE/VERSION:  
 -sV: Teste les ports ouverts pour déterminer le service en écoute et sa version  
 --version-light: Limite les tests aux plus probables pour une identification plus rapide  
