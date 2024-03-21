@@ -34,6 +34,22 @@ Scan rapide des ports d'une cible unique
 ```
 nmap 10.0.0.1   
 ```
+La réponse attendue doit etre sous cette forme
+![screen nmap simple](./Screen-User-Guide/Screen-nmap-ip-address.png)
+
+Explications des lignes :
+ - Ligne 1 : Affichage du prompt `wilder@wilder-VirtualBox:~$` suivant de la commande `nmap` et de l'argument `172.16.10.10`.
+ - Ligne 2 : Information sur la version de `nmap` et horodatage de l'execution.
+ - Ligne 3 : Indication de l'adresse IP propriétaire des informations qui suivent.
+ - Ligne 4 : Indication de l'état de la machine distante, `up` pour joignable avec un temps de réponse, ici `0.0012s`
+ - Ligne 5 : Indication du nombre de port non affichable, probablement fermés.
+ - Ligne 6 : Titre des colonnes du tableau qui suit.
+ - Ligne 7 : Information sur un port scanner, le port `21/tcp` est actuellement `filtré` il est utilisé par un service `ftp`.
+ - Ligne 8 : Même chose que "Ligne 7" mais pour le port `22/tcp` qui lui semble `ouvert` il est utilisé par un service `ssh`.
+ - Ligne 9 : Troisieme port scanné, c'est le port `80/tcp`, actuellement `filtré`, utilisé par un service `http`.
+ - Ligne 10 : Rien.
+ - Ligne 11 : Indication de fin de scan, il indique avoir scanné une seule adresse IP en 1.34 secondes.
+
 
 Scan rapide des ports d'une série de cibles
 ```
