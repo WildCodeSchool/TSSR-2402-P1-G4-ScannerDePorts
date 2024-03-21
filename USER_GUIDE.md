@@ -49,7 +49,7 @@ Archivage XML du scan rapide effectué
 
 ### Utilisation avancé
 
-**Les commandes avancé doivent être faite avec la commande ``sudo``  
+**Les commandes avancé doivent être faite avec la commande ``sudo``**  
 
 La commande ``sudo`` permet a la machine d'exploiter la carte réseau plus profondement, cela permet donc d'avoir plus d'informations sur les commandes simple. Mais il permet aussi d'avoir d'autre parametre applicable a la commande ``nmap``  
 Quelques exemples :  
