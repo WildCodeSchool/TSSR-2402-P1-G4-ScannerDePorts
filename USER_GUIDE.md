@@ -34,7 +34,7 @@ Scan rapide des ports d'une cible unique
 ```
 nmap 10.0.0.1   
 ```
-La réponse attendue doit etre sous cette forme
+La réponse attendue doit etre sous cette forme  
 ![screen nmap simple](./Screen-User-Guide/Screen-nmap-ip-address.png)
 
 Explications des lignes :
