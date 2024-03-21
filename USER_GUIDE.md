@@ -1,10 +1,19 @@
 # Guide utilisateur
 
+## Présentation  
+
+À la base, Nmap (Network Mapper) est un logiciel de cartographie de réseaux qui utilise les paquets IP pour identifier tous les périphériques connectés à ce réseau. Il s'agit également d'un des outils de découverte qui permet de fournir des informations sur les services et les systèmes d'exploitation qu'ils exécutent.
+
+Utilisé par les administrateurs réseau, Nmap peut être utilisé pour effectuer un balayage de ports ou encore trouver des hôtes actifs sur un réseau. Ce scan de ports libre peut aussi détecter les systèmes d'exploitation d'une machine et la version logiciel, trouver des balayages ping…
+
+Compatible avec de nombreux systèmes d'exploitation, ce programme est en général utilisé grâce à une interface en ligne de commande. Initialement développé pour des réseaux d'entreprise, Nmap est capable d'analyser des milliers d'appareils connectés.
 
 
 ## Guide pour Linux Ubuntu
 
 ### Quelques commandes pour commencer
+
+Voila deux commandes très utile pour avoir des informations sur le programme nmap
 
 Manuel de l'application
 > man nmap  
@@ -15,7 +24,7 @@ Résumé des options
 ### Utilisation simple
 
 **Les commandes simple peuvent être faites sans appliquer ``sudo``**  
-Quelques exemples :  
+Quelques exemples simples pour commencer a utiliser nmap :  
 
 Scan rapide des ports d'une cible unique
 > nmap 10.0.0.1   
