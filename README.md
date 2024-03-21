@@ -25,10 +25,26 @@ Création de profils de scan personnalisés
 
 ### Choix techniques : quel OS, quelle version, etc.. 
 **logiciels:** Nmap.
+disponible sous toute les distributiuons.
 
 **Serveur:** Debian 12.
+- Nom : SRVLX01
+- Compte : root
+- Mot de passe : Azerty1*
+- Adresse IP fixe : 172.16.10.10/24
 
-**client:** Windows 10 et Ubuntu 22.04.
+**client:**
+Ubuntu 22.04
+- nom : CLILIN01
+- Compte utilisateur : wilder
+- Mot de passe : Azerty1*
+- Adresse IP fixe : 172.16.10.20/24
+
+Windows 10 
+- Nom : CLIWIN02 
+- Compte utilisatuer : wilder
+- Mot de passe : Azerty1*
+- Adresse IP fixe : 172.16.10.30/24
 
 ### Introduction : mise en contexte  
 Dans un monde où la sécurité informatique est un point important au sein d'une sociéte ou d'un organisme, la nécessité de détecter et de contrer les menaces potentielles sur les réseaux est cruciale. L'un des moyens pour y arrive est le scan des ports. Pour se faire different outils sont utilisable tel que nmap ou netcat, mais nous utiliseront pricipalement ici nmap entant largement suffisant pour notre projet.
