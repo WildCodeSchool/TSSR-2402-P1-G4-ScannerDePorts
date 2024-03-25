@@ -6,22 +6,23 @@ Scanner les ports d’un serveur à partir d’un client et en déduire les fail
  **Objectif secondaire :**
 Création de profils de scan personnalisés
 ### Membres du groupe de projet (rôles par sprint) 
-***Semaine 1:*** 
-|Nom|Rôles|taches|
-|---|---|---|
-|Ahmed|membre|Doc Admin|
-|Nicolas C|membre|Doc Utilisateur Gratté nmap|
-|Sébastien|Scrum Ma|VM, IP, Gratté nmap|
-|Patrick|PO|DOC Général| 
+***Semaine 1:***
+ 
+| Nom       | Rôles    | taches                      |
+| --------- | -------- | --------------------------- |
+| Ahmed     | membre   | Doc Admin                   |
+| Nicolas C | membre   | Doc Utilisateur Gratté nmap |
+| Sébastien | Scrum Ma | VM, IP, Gratté nmap         |
+| Patrick   | PO       | DOC Général                 |
 
 ***Semaine 2:***
 
-|Nom|Rôles|taches|
-|---|---|---|
-|Ahmed|PO|Doc Admin|
-|Nicolas C|Scrum M|Doc Utilisateur Gratté nmap|
-|Sébastien|membre|VM, IP, Gratté nmap|
-|Patrick|membre|DOC Général| 
+| Nom       | Rôles   | taches                      |
+| --------- | ------- | --------------------------- |
+| Ahmed     | PO      | Doc Admin                   |
+| Nicolas C | Scrum M | Doc Utilisateur Gratté nmap |
+| Sébastien | membre  | VM, IP, Gratté nmap         |
+| Patrick   | membre  | DOC Général                 |
 
 ### Choix techniques : quel OS, quelle version, etc.. 
 **logiciels:** Nmap.
