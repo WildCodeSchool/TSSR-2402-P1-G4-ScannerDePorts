@@ -58,4 +58,5 @@ Concernant le serveur Debian, nous avons dû configurer une adresse IP fixe. Pou
 Actuellement, nous travaillons sur la possibilité de créer des scans personnalisés, c'est-à-dire de pouvoir scanner des ports spécifiques ou une certaine plage de ports.
 
 ### Next step :
-
+On vous a montré quelques commandes en guise d'introduction mais, beaucoup de terme technique et acronyme ont été passer sous silence our une meilleur comprehension de la démonstration.
+Pour la suite,il serais bon de comprendre le tenant et les aboutisant de tout ces protocles et port, pour allez plus loin dans notre formation réseau.
